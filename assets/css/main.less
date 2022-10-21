@@ -1,0 +1,156 @@
+@import (inline) 'reference/fonts.css';
+@import (inline) 'external/reset.min.css';
+@import (reference) 'reference/lessmix';
+@import (reference) 'reference/var';
+
+
+main, section, nav, article {display: block;}
+
+*, *:after, *:before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; }
+.clearfix {&:after, &:before {display: table;content: '';} &:after {clear: both;}}
+a {text-decoration: none;color: inherit;}
+
+body, html {
+	font-family: @fonts;
+	font-size: 16px;
+	line-height: 1;
+	background: @c-background;
+	color: @c-text;
+	cursor: default;
+	overflow-x: hidden;
+
+	@media @v-t {
+		font-size: 14px;
+	}
+}
+
+body {
+	&.overflow-hidden {
+		overflow: hidden;
+	}
+}
+
+label {
+	cursor: pointer;
+}
+
+.wrap {
+	width: @l-width-d;
+	max-width: 100%;
+	padding: 0 @l-col-gap;
+	.center;
+
+	@media @v-t {
+		width: @l-width-t;
+	}
+
+	@media @v-m {
+		width: @l-width-m;
+	}
+}
+
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	.square(2rem);
+	fill: currentcolor;
+
+	&_symbol {
+		path {
+			fill: inherit;
+		}
+	}
+}
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.section {
+	padding: @p-block 0;
+
+	@media @v-m {
+		padding: @p-block-m 0;
+	}
+
+	& + & {
+		border-top: @b-width solid @c-border;
+	}
+
+	&_buttons {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -1.5rem;
+		margin-top: -.75rem;
+
+		.button {
+			margin-left: 1.5rem;
+			margin-top: .75rem;
+
+			@media @v-m {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.textpage {
+	.cols-width(8);
+	max-width: 100%;
+	width: @cols-width + (@l-col-gap * 2);
+	padding: 0 @l-col-gap;
+	.center;
+}
+
+.overlay {
+	position: fixed;
+	z-index: 99;
+	.square(100%);
+	background: fade(@c-black, 20);
+	backdrop-filter: blur(20px);
+	visibility: hidden;
+	.opacity(0);
+}
+
+
+// Components
+@import 'components/header';
+@import 'components/mainmenu';
+@import 'components/button';
+@import 'components/footer';
+@import 'components/text';
+
+// Blocks
+@import 'blocks/services';
+@import 'blocks/clients';
+@import 'blocks/perks';
+@import 'blocks/results';
+@import 'blocks/article';
+@import 'blocks/form';
+
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

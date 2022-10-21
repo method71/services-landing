@@ -1,0 +1,40 @@
+@import (reference) '../reference/var';
+@import (reference) '../reference/classes';
+@import (reference) '../reference/lessmix';
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	height: 4.5rem;
+	padding: 0 2.5rem;
+	.rounded(@b-radius);
+	border: @b-width solid @c-border;
+
+	font-size: 1.125rem;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	.transition-all;
+
+	&:hover {
+		border-color: darken(@c-border, 10);
+	}
+
+	&-primary {
+		background: @c-primary;
+		border-color: @c-primary;
+
+		&:hover {
+			background: lighten(@c-primary, 10);
+			border-color: lighten(@c-primary, 10);
+		}
+	}
+
+	&-small {
+		height: 4rem;
+		padding: 0 1.5rem;
+	}
+}

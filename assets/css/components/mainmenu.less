@@ -1,0 +1,29 @@
+@import (reference) '../reference/var';
+@import (reference) '../reference/classes';
+@import (reference) '../reference/lessmix';
+
+@media @v-d {
+	.mainmenu {
+		display: flex;
+
+		&_item {
+			font-size: .875rem;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			& + & {
+				margin-left: 1rem;
+			}
+
+			&:hover {
+				color: @c-primary;
+			}
+		}
+	}
+}
+
+@media @v-t {
+	.mainmenu {
+		display: none;
+	}
+}

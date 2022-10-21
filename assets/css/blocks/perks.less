@@ -1,0 +1,83 @@
+@import (reference) '../reference/var';
+@import (reference) '../reference/classes';
+@import (reference) '../reference/lessmix';
+
+.perks {
+	&_wrap {
+		position: relative;
+	}
+
+	&_list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -@l-col-gap;
+		margin-top: -@l-col-gap;
+	}
+
+	&_item {
+		display: flex;
+		align-items: center;
+		.cols(5);
+		margin-left: @l-col-gap;
+		margin-top: @l-col-gap;
+		padding-right: 1rem;
+	}
+
+	&_image {
+		flex-shrink: 0;
+		.square(4.5rem);
+		.rounded(100%);
+		margin-right: @l-col-gap;
+		pointer-events: none;
+	}
+
+	&_text {
+		line-height: 150%;
+
+		b {
+			font-weight: bold;
+		}
+	}
+
+	&_buttons {
+		margin-top: 3rem;
+	}
+
+	&_bg {
+		@media @v-m {
+			display: none;
+		}
+
+		&_circle {
+			position: absolute;
+			right: -1rem;
+			top: 50%;
+			margin-top: -8rem;
+			.square(12rem);
+			.rounded(100%);
+
+			background: @c-primary;
+
+			@media @v-t {
+				.square(20rem);
+				right: -15rem;
+				margin-top: -15rem;
+			}
+		}
+
+		&_hero {
+			position: absolute;
+			right: -3rem;
+			top: 0;
+			.cols(3);
+			height: 100%;
+
+			background: url(../img/perks.png) no-repeat center / contain;
+
+			@media @v-t {
+				right: -20rem;
+				.cols(5);
+			}
+		}
+	}
+}

@@ -1,0 +1,135 @@
+@import (reference) '../reference/var';
+@import (reference) '../reference/classes';
+@import (reference) '../reference/lessmix';
+
+.text {
+	// Headers
+	h1, h2, h3, h4, h5 {
+		font-weight: bold;
+		line-height: 130%;
+		margin-bottom: .6em;
+
+		&:not(:first-child) {
+			margin-top: 1.5em;
+		}
+	}
+
+	h1 {
+		font-size: 2.5em;
+
+		@media @v-m {
+			font-size: 2.25em;
+		}
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.75em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 1.125em;
+	}
+
+
+	// Text
+	p {
+		line-height: 150%;
+	}
+
+	figcaption {
+		margin-top: .75rem;
+		line-height: 150%;
+		color: @c-text-muted;
+	}
+
+	b, strong {
+		font-weight: 600;
+	}
+
+	i, em {
+		font-style: italic;
+	}
+
+	a {
+		border-bottom: @b-width solid @c-border;
+
+		&:hover {
+			background: @c-primary;
+			border-color: @c-primary;
+		}
+	}
+
+
+	// lists
+	ul, ol {
+		li {
+			position: relative;
+			line-height: 150%;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				color: @c-text-muted;
+			}
+		}
+
+		li + li {
+			margin-top: .75em;
+		}
+	}
+
+	ul {
+		li {
+			padding-left: 1.5em;
+
+			&:before {
+				top: .45em;
+				.square(.5em);
+				.rounded(100%);
+				border: 1px solid currentColor;
+			}
+		}
+	}
+
+	ol {
+		counter-reset: ol;
+
+		li {
+			padding-left: 2em;
+
+			&:before {
+				content: counter(ol);
+				top: 0;
+				counter-increment: ol;
+				font-weight: 500;
+			}
+		}
+	}
+
+
+	// Media
+	img, video {
+		display: block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		.rounded(@b-radius);
+	}
+
+
+	// Margins
+	p, ul, ol, figure, img {
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+	}
+}

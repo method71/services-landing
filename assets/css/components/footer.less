@@ -1,0 +1,146 @@
+@import (reference) '../reference/var';
+@import (reference) '../reference/classes';
+@import (reference) '../reference/lessmix';
+
+.footer {
+	margin-top: 6.5rem;
+	padding: 2.5rem 0;
+	background: @c-background-fade;
+
+	@media @v-m {
+		margin-top: 4.5rem;
+	}
+
+	&_wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&_col {
+		.cols(4);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media @v-t {
+			.cols(3);
+
+			&:nth-child(3) {
+				margin-top: 1.5rem;
+				padding-top: 1.5rem;
+				border-top: @b-width solid @c-border;
+				width: 100%;
+			}
+		}
+
+		@media @v-m {
+			width: 100%;
+
+			& + & {
+				margin-top: 1.5rem;
+				padding-top: 1.5rem;
+				border-top: @b-width solid @c-border;
+			}
+		}
+	}
+
+	&_copyright {
+		font-size: 1.125rem;
+		font-weight: 600;
+		line-height: 130%;
+		margin-bottom: 1rem;
+	}
+
+	&_links {
+		a {
+			display: inline-flex;
+			align-items: center;
+			font-weight: 500;
+			line-height: 130%;
+			.opacity(.5);
+
+			.transition-all;
+
+			&:hover {
+				.opacity(1);
+
+				span {
+					background: @c-primary;
+				}
+			}
+
+			&:before {
+				content: '';
+				width: 1.5rem;
+				height: @b-width;
+				margin-right: .5rem;
+				background: @c-text;
+				.opacity(.5);
+			}
+		}
+
+		a + a {
+			margin-top: .5rem;
+		}
+	}
+
+	&_contact {
+		display: inline-flex;
+		align-items: center;
+		font-size: 1.125rem;
+		font-weight: 500;
+		.transition-all;
+
+		.icon {
+			margin-right: .5rem;
+		}
+
+		&:hover {
+			span {
+				background: @c-primary;
+			}
+		}
+
+		& + & {
+			margin-top: .25rem;
+		}
+	}
+
+	&_buttons {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		margin-left: -1rem;
+		margin-top: -.75rem;
+
+		.button {
+			margin-left: 1rem;
+			margin-top: .75rem;
+
+			@media @v-m {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	&_credits {
+		margin-top: auto;
+		line-height: 130%;
+		.opacity(.5);
+		.transition-all;
+
+		&:hover {
+			.opacity(1);
+
+			span {
+				background: @c-primary;
+			}
+		}
+
+		@media @v-t {
+			margin-top: 1rem;
+		}
+	}
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Чистка и дезинфекция вентиляции — GSC</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Компания GSC занимается чисткой вентиляции, чисткой дымоходов и ремонтом кондиционеров">
+</head>
+<body class="home">	
+	<div style="position: fixed;width: 100%;height: 100%;top: 0;left: 0;background: #fff;z-index: 100" id="loader"></div>
+	
+	<svg display="none">
+		<defs>
+		  <symbol viewBox="0 0 32 32" id="phone">
+			<path d="M10 4C9.47656 4 8.94141 4.18359 8.5625 4.5625C8.18359 4.94141 8 5.47656 8 6V26C8 26.5234 8.18359 27.0586 8.5625 27.4375C8.94141 27.8164 9.47656 28 10 28H22C22.5234 28 23.0586 27.8164 23.4375 27.4375C23.8164 27.0586 24 26.5234 24 26V6C24 5.47656 23.8164 4.94141 23.4375 4.5625C23.0586 4.18359 22.5234 4 22 4H10ZM10 6H22V26H10V6ZM14 23V25H18V23H14Z" fill="black"/>
+		  </symbol>
+	  
+		  <symbol viewBox="0 0 32 32" id="envelope">
+			<path d="M3 8V26H29V8H3ZM7.3125 10H24.6875L16 15.7812L7.3125 10ZM5 10.875L15.4375 17.8438L16 18.1875L16.5625 17.8438L27 10.875V24H5V10.875Z" fill="black"/>
+		  </symbol>
+	  
+		  <symbol viewBox="0 0 32 32" id="instagram">
+			<path d="M11.4688 5C7.91797 5 5 7.91406 5 11.4688V20.5312C5 24.082 7.91406 27 11.4688 27H20.5312C24.082 27 27 24.0859 27 20.5312V11.4688C27 7.91797 24.0859 5 20.5312 5H11.4688ZM11.4688 7H20.5312C23.0039 7 25 8.99609 25 11.4688V20.5312C25 23.0039 23.0039 25 20.5312 25H11.4688C8.99609 25 7 23.0039 7 20.5312V11.4688C7 8.99609 8.99609 7 11.4688 7ZM21.9062 9.1875C21.4023 9.1875 21 9.58984 21 10.0938C21 10.5977 21.4023 11 21.9062 11C22.4102 11 22.8125 10.5977 22.8125 10.0938C22.8125 9.58984 22.4102 9.1875 21.9062 9.1875ZM16 10C12.6992 10 10 12.6992 10 16C10 19.3008 12.6992 22 16 22C19.3008 22 22 19.3008 22 16C22 12.6992 19.3008 10 16 10ZM16 12C18.2227 12 20 13.7773 20 16C20 18.2227 18.2227 20 16 20C13.7773 20 12 18.2227 12 16C12 13.7773 13.7773 12 16 12Z" fill="black"/>
+		  </symbol>
+	  
+		  <symbol class="icon_symbol" viewBox="0 0 32 32" id="air-conditioner">
+			<path d="M5 5C3.355 5 2 6.355 2 8v5.5c0 .523.148.918.25 1.219l.063.125 1.156 2.437c.011.028.05.035.062.063C4.02 18.383 5.082 19 6.187 19H9v-2H6.187c-.464 0-.742-.191-.875-.5v-.031L4.595 15h22.812l-.718 1.469v.031c-.133.309-.41.5-.875.5H23v2h2.813c1.105 0 2.168-.617 2.656-1.656h.031a.335.335 0 0 0 .031-.063l1.157-2.437.062-.125c.102-.301.25-.696.25-1.219V8c0-1.645-1.355-3-3-3H5zm0 2h22c.555 0 1 .445 1 1v5H4V8c0-.555.445-1 1-1zm7 10c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm4 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm4 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm-9 3c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm5 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm5 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm-11 3c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm6 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm6 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zM8 26c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm8 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm8 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"
+			  fill="#000"></path>
+		  </symbol>
+	  
+		  <symbol class="icon_symbol" viewBox="0 0 32 32" id="cooker-hood">
+			<path d="M13 5v5.531L6.625 16H6c-1.645 0-3 1.355-3 3v3h26v-3c0-1.645-1.355-3-3-3h-.625L19 10.531V5h-2v5h-2V5h-2zm1.375 7h3.25l4.688 4H9.688l4.687-4zM6 18h20c.566 0 1 .434 1 1v1H5v-1c0-.566.434-1 1-1zm4 5v4h2v-4h-2zm5 0v4h2v-4h-2zm5 0v4h2v-4h-2z" fill="#000"></path>
+		  </symbol>
+	  
+		  <symbol class="icon_symbol" viewBox="0 0 32 32" id="minus">
+			<path d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13 13-5.832 13-13S23.168 3 16 3zm0 2c6.086 0 11 4.914 11 11s-4.914 11-11 11S5 22.086 5 16 9.914 5 16 5zm-6 10v2h12v-2H10z" fill="#000"></path>
+		  </symbol>
+	  
+		  <symbol class="icon_symbol" viewBox="0 0 32 32" id="plus">
+			<path d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13 13-5.832 13-13S23.168 3 16 3zm0 2c6.086 0 11 4.914 11 11s-4.914 11-11 11S5 22.086 5 16 9.914 5 16 5zm-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5h-2z" fill="#000"></path>
+		  </symbol>
+		  
+		  <symbol class="icon_symbol" viewBox="0 0 32 32" id="roofing">
+			<path d="M16 8.031l-.531.313-13.5 8.406 1.062 1.688.969-.594V24h2v-7.406l10-6.188 10 6.188V24h2v-6.156l.969.593 1.062-1.687L26 14.25V9h-5v2.125l-4.469-2.781L16 8.03zM23 11h1v2l-1-.625V11z" fill="#000"></path>
+		  </symbol>
+		</defs>
+	  </svg>
+
+	<div class="form">
+		<div class="form_wrap">
+			<form class="form_step" data-step="data">
+				<div class="form_title">Оставить заявку</div>
+	
+				<label class="form_group">
+					<span class="form_label">Телефон <span class="form_required">*</span></span>
+					<input type="phone" name="phone" class="textinput" placeholder="8 (7__) ___ __ __" required="">
+				</label>
+	
+				<label class="form_group">
+					<span class="form_label">Эл. почта</span>
+					<input type="email" name="email" class="textinput" placeholder="corp@gmail.com">
+				</label>
+	
+				<label class="form_group">
+					<span class="form_label">Имя</span>
+					<input type="text" name="name" class="textinput" placeholder="Асет Бауыржанович">
+				</label>
+	
+				<label class="form_group">
+					<span class="form_label">Название объекта</span>
+					<input type="text" name="company" class="textinput" placeholder="Ресторан “Ritz Carlton”">
+				</label>
+	
+				<button type="submit" class="form_button button button-primary">Продолжить</button>
+			</form>
+	
+			<form class="form_step" data-step="service">
+				<div class="form_title">Выберите услугу</div>
+	
+				<div class="form_list">
+					<label class="form_list_item">
+						<input type="radio" name="service" value="vent">
+						<span>
+							<svg class="icon">
+								<use xlink:href="#cooker-hood"></use>
+							</svg>
+							Чистка и дезинфекция вентиляции
+						</span>
+					</label>
+					
+					<label class="form_list_item">
+						<input type="radio" name="service" value="cond">
+						<span>
+							<svg class="icon">
+								<use xlink:href="#air-conditioner"></use>
+							</svg>
+							Обслуживание кондиционеров
+						</span>
+					</label>
+					
+					<label class="form_list_item">
+						<input type="radio" name="service" value="chim">
+						<span>
+							<svg class="icon">
+								<use xlink:href="#roofing"></use>
+							</svg>
+							Чистка дымоходов
+						</span>
+					</label>
+				</div>
+			</form>
+	
+			<form class="form_step" data-step="calc" data-service="vent">
+				<div class="form_title">Расчёт стоимости</div>
+	
+				<div class="form_description form_group">
+					Введите данные или <button>пропустите этот шаг</button> до консультации с мастером. Итоговая сумма может измениться в зависимости от дополнительных сложностей работ. Сумма рассчитана без учета химических средств.
+				</div>
+	
+				<div class="form_group">
+					<span class="form_label">Тип чистки вентиляции</span>
+	
+					<div class="choice">
+						<label class="choice_item">
+							<input type="radio" name="type" value="grease" checked="">
+							<span>Жировая</span>
+						</label>
+						<label class="choice_item">
+							<input type="radio" name="type" value="dust">
+							<span>Пылевая</span>
+						</label>
+					</div>
+				</div>
+	
+				<div class="form_group">
+					<label class="numberinput">
+						<div class="numberinput_label">Кол-во <span>(пог.м)</span></div>
+						<input type="text" class="numberinput_input" value="0" placeholder="0" name="p1">
+						<div class="numberinput_controls">
+							<button class="numberinput_control" data-action="decrease">
+								<svg class="icon">
+									<use xlink:href="#minus"></use>
+								</svg>
+							</button>
+							<button class="numberinput_control" data-action="increase">
+								<svg class="icon">
+									<use xlink:href="#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</label>
+	
+					<label class="numberinput">
+						<div class="numberinput_label">Двигатель <span>(шт.)</span></div>
+						<input type="text" class="numberinput_input" value="0" placeholder="0" name="p2">
+						<div class="numberinput_controls">
+							<button class="numberinput_control" data-action="decrease">
+								<svg class="icon">
+									<use xlink:href="#minus"></use>
+								</svg>
+							</button>
+							<button class="numberinput_control" data-action="increase">
+								<svg class="icon">
+									<use xlink:href="#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</label>
+	
+					<label class="numberinput">
+						<div class="numberinput_label">Жироуловитель <span>(шт.)</span></div>
+						<input type="text" class="numberinput_input" value="0" placeholder="0" name="p3">
+						<div class="numberinput_controls">
+							<button class="numberinput_control" data-action="decrease">
+								<svg class="icon">
+									<use xlink:href="#minus"></use>
+								</svg>
+							</button>
+							<button class="numberinput_control" data-action="increase">
+								<svg class="icon">
+									<use xlink:href="#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</label>
+	
+					<label class="numberinput">
+						<div class="numberinput_label">Вытяжной зонт <span>(шт.)</span></div>
+						<input type="text" class="numberinput_input" value="0" placeholder="0" name="p4">
+						<div class="numberinput_controls">
+							<button class="numberinput_control" data-action="decrease">
+								<svg class="icon">
+									<use xlink:href="#minus"></use>
+								</svg>
+							</button>
+							<button class="numberinput_control" data-action="increase">
+								<svg class="icon">
+									<use xlink:href="#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</label>
+	
+					<label class="numberinput">
+						<div class="numberinput_label">Водяной фильтр <span>(шт.)</span></div>
+						<input type="text" class="numberinput_input" value="0" placeholder="0" name="p5">
+						<div class="numberinput_controls">
+							<button class="numberinput_control" data-action="decrease">
+								<svg class="icon">
+									<use xlink:href="#minus"></use>
+								</svg>
+							</button>
+							<button class="numberinput_control" data-action="increase">
+								<svg class="icon">
+									<use xlink:href="#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</label>
+				</div>
+	
+				<div class="form_group form_summary">
+					<div class="form_summary_key">Итого</div>
+					<div class="form_summary_value">...</div>
+				</div>
+	
+				<button type="submit" class="form_button button button-primary">Продолжить</button>
+			</form>
+	
+			<form class="form_step" data-step="calc" data-service="chim">
+				<div class="form_title">Расчёт стоимости</div>
+	
+				<div class="form_description form_group">
+					Введите данные или <button data-skip>пропустите этот шаг</button> до консультации с мастером. Итоговая сумма может измениться в зависимости от дополнительных сложностей работ. Сумма рассчитана без учета химических средств.
+				</div>
+	
+				<div class="form_group">
+					<span class="form_label">Тип трубы дымохода</span>
+	
+					<div class="choice choice-vertical">
+						<label class="choice_item">
+							<input type="radio" name="type" value="Кирпичная" checked="">
+							<span>Кирпичная</span>
+						</label>
+						<label class="choice_item">
+							<input type="radio" name="type" value="Стальная">
+							<span>Стальная</span>
+						</label>
+						<label class="choice_item">
+							<input type="radio" name="type" value="Асбестоцементная">
+							<span>Асбестоцементная</span>
+						</label>
+						<label class="choice_item">
+							<input type="radio" name="type" value="Керамическая">
+							<span>Керамическая</span>
+						</label>
+						<label class="choice_item">
+							<input type="radio" name="type" value="Вермикулитовая">
+							<span>Вермикулитовая</span>
+						</label>
+					</div>
+				</div>
+	
+				<div class="form_group">
+					<label class="numberinput">
+						<div class="numberinput_label">Кол-во <span>(пог.м)</span></div>
+						<input type="text" class="numberinput_input" value="0" placeholder="0" name="p1">
+						<div class="numberinput_controls">
+							<button class="numberinput_control" data-action="decrease">
+								<svg class="icon">
+									<use xlink:href="#minus"></use>
+								</svg>
+							</button>
+							<button class="numberinput_control" data-action="increase">
+								<svg class="icon">
+									<use xlink:href="#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</label>
+				</div>
+	
+				<div class="form_group form_summary">
+					<div class="form_summary_key">Итого</div>
+					<div class="form_summary_value">...</div>
+				</div>
+	
+				<button type="submit" class="form_button button button-primary">Продолжить</button>
+			</form>
+	
+			<form class="form_step" data-step="success">
+				<div class="form_title">Ваша заявка обрабатывается</div>
+	
+				<div class="form_text">
+					Специалист перезвонит в ближайшее время. Если у вас срочный вопрос можете позвонить сами на номер <b><a href="tel:87011214874">8 (701) 121 48 74</a></b>.
+				</div>
+	
+				<button class="form_button button button-primary">Понятно</button>
+			</form>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	
+	<header class="header header-instant">
+		<div class="header_wrap wrap">
+			<a href="/" class="header_logo">
+				<div class="header_title">GSC</div>
+				<div class="header_description">чистка систем <br>вентиляции</div>
+			</a>
+			
+			<nav class="mainmenu header_menu">
+				<a href="/#services" class="mainmenu_item">услуги</a>
+				<a href="/#clients" class="mainmenu_item">клиенты</a>
+				<a href="/#perks" class="mainmenu_item">условия</a>
+				<a href="/#results" class="mainmenu_item">результат</a>
+				<a href="/#contacts" class="mainmenu_item">контакты</a>
+			</nav>
+			
+			<div class="header_contacts">
+				<a class="header_phone" href="tel:87011214874">8 (701) 121 48 74</a>
+				<div class="header_location">Казахстан</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="services">
+		<div class="services_bg">
+			<div class="services_bg_image"></div>
+			<div class="services_bg_overlay"></div>
+			<div class="services_bg_text"></div>
+			<div class="services_bg_hero"></div>
+		</div>
+
+		<div class="services_list wrap" id="services">
+			<button data-form data-service="vent" class="services_item">
+				<span class="services_item_icon">
+					<svg class="icon">
+						<use xlink:href="#cooker-hood"></use>
+					</svg>
+				</span>
+
+				<span class="services_item_text">
+					чистка & дезинфекция
+					<b>вентиляции</b>
+				</span>
+			</button>
+
+			<button data-form data-service="cond" class="services_item">
+				<span class="services_item_icon">
+					<svg class="icon">
+						<use xlink:href="#air-conditioner"></use>
+					</svg>
+				</span>
+
+				<span class="services_item_text">
+					обслуживание
+					<b>кондиционеров</b>
+				</span>
+			</button>
+
+			<button data-form="calc" data-service="chim" class="services_item">
+				<span class="services_item_icon">
+					<svg class="icon">
+						<use xlink:href="#roofing"></use>
+					</svg>
+				</span>
+
+				<span class="services_item_text">
+					чистка
+					<b>дымоходов</b>
+				</span>
+			</button>
+		</div>
+	</section>
+
+	<section class="clients" id="clients">
+		<div class="clients_wrap">
+			<ul class="clients_list">
+				<li class="clients_item"><img src="assets/img/clients/01.png" alt="логотип пинта bar&grill"></li>
+				<li class="clients_item"><img src="assets/img/clients/02.png" alt="логотип алые паруса"></li>
+				<li class="clients_item"><img src="assets/img/clients/03.png" alt="логотип yuframe burger"></li>
+				<li class="clients_item"><img src="assets/img/clients/04.png" alt="логотип якитория"></li>
+				<li class="clients_item"><img src="assets/img/clients/05.png" alt="логотип лепим&варим"></li>
+				<li class="clients_item"><img src="assets/img/clients/06.png" alt="логотип rumi"></li>
+				<li class="clients_item"><img src="assets/img/clients/07.png" alt="логотип the shoreditch"></li>
+				<li class="clients_item"><img src="assets/img/clients/08.png" alt="логотип black duck"></li>
+				<li class="clients_item"><img src="assets/img/clients/09.png" alt="логотип angel-in-us"></li>
+				<li class="clients_item"><img src="assets/img/clients/10.png" alt="логотип rixos president astana"></li>
+				<li class="clients_item"><img src="assets/img/clients/11.png" alt="логотип ocean basket"></li>
+				<li class="clients_item"><img src="assets/img/clients/12.png" alt="логотип gold dragon"></li>
+				<li class="clients_item"><img src="assets/img/clients/13.png" alt="логотип marrone rosso"></li>
+				<li class="clients_item"><img src="assets/img/clients/14.png" alt="логотип korean house"></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="perks section" id="perks">
+		<div class="wrap perks_wrap">
+			<h3 class="title perks_title">Как мы работаем</h3>
+
+			<ul class="perks_list">
+				<li class="perks_item">
+					<img src="assets/img/perks/01.png" alt="чистка вентиляции в сложнодоступных местах" class="perks_image">
+					<div class="perks_text">Выполнение работы <b>в&nbsp;сложнодоступных местах</b> (крыши, навесной потолок, тех.&nbsp;помещения и&nbsp;др.)</div>
+				</li>
+				<li class="perks_item">
+					<img src="assets/img/perks/02.png" alt="чистка вентиляции на любой высоте" class="perks_image">
+					<div class="perks_text">Работа <b>на&nbsp;любой высоте</b> (классифицированные специалисты с&nbsp;подтверждающими документами)</div>
+				</li>
+				<li class="perks_item">
+					<img src="assets/img/perks/03.png" alt="чистка вентиляции с документальным сопровождением" class="perks_image">
+					<div class="perks_text">Полное <b>документальное сопровождение</b> касательно обслуживания вентиляционной системы</div>
+				</li>
+				<li class="perks_item">
+					<img src="assets/img/perks/04.png" alt="годовое обслуживание вентиляции" class="perks_image">
+					<div class="perks_text">Заключение <b>годовых договоров на&nbsp;обслуживание</b> (вы сможете забыть про&nbsp;вентиляционную систему)</div>
+				</li>
+				<li class="perks_item">
+					<img src="assets/img/perks/05.png" alt="скидки на чистку вентиляции" class="perks_image">
+					<div class="perks_text">Наличный и&nbsp;безналичный расчет; <b>система скидок</b> для&nbsp;постоянных клиентов; услуга рассрочки оплаты</div>
+				</li>
+				<li class="perks_item">
+					<img src="assets/img/perks/06.png" alt="гарантия на чистку вентиляции" class="perks_image">
+					<div class="perks_text"><b>Гарантия выполненной работы на&nbsp;3&nbsp;месяца</b> (при&nbsp;выявлении замечаний — устранение за&nbsp;наш счет)</div>
+				</li>
+			</ul>
+
+			<div class="perks_buttons">
+				<div class="section_buttons">
+					<button data-form="data" class="button button-primary">оставить заявку</button>
+					<button data-form="service" class="button">расчёт стоимости</button>
+				</div>
+			</div>
+
+			<div class="perks_bg">
+				<div class="perks_bg_circle"></div>
+				<div class="perks_bg_hero"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="results section" id="results">
+		<div class="wrap results_wrap">
+			<h3 class="title results_title">Результат чистки</h3>
+
+			<div class="results_list">
+				<div class="results_item">
+					<div class="results_item_wrap">
+						<div class="results_photo results_photo-before">
+							<img src="assets/img/works/1b.png" alt="">
+						</div>
+						<div class="results_photo results_photo-after">
+							<img src="assets/img/works/1a.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="results_item">
+					<div class="results_item_wrap">
+						<div class="results_photo results_photo-before">
+							<img src="assets/img/works/2b.png" alt="">
+						</div>
+						<div class="results_photo results_photo-after">
+							<img src="assets/img/works/2a.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="results_item">
+					<div class="results_item_wrap">
+						<div class="results_photo results_photo-before">
+							<img src="assets/img/works/3b.png" alt="">
+						</div>
+						<div class="results_photo results_photo-after">
+							<img src="assets/img/works/3a.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="results_buttons">
+				<div class="section_buttons">
+					<button data-form="data" class="button button-primary">оставить заявку</button>
+					<button data-form="service" class="button">расчёт стоимости</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="wrap">
+		<section class="article">
+			<div class="article_image"></div>
+		
+			<div class="article_info">
+				<a href="#" class="article_title">Зачем нужна чистка вентиляции?</a>
+				<div class="article_text">Коротко: пожарная безопасность, санитарные нормы, устранение неприятных запахов, улучшение работы вентиляционной системы. Узнайте больше в нашей статье на эту тему.</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="footer_wrap wrap">
+			<div class="footer_col">
+				<div class="footer_copyright">© 2020, ТОО “АдалКазАвто”</div>
+
+				<div class="footer_links">
+					<a href="#"><span>сопроводительные документы</span></a>
+					<a href="#"><span>рекомендательные письма</span></a>
+				</div>
+			</div>
+
+			<div class="footer_col footer_contacts" id="contacts">
+				<a href="tel:87011214874" class="footer_contact">
+					<svg class="icon">
+						<use xlink:href="#phone"></use>
+					</svg>
+					<span>8 (701) 121 48 74</span>
+				</a>
+
+				<a href="tel:87772375973" class="footer_contact">
+					<svg class="icon">
+						<use xlink:href="#phone"></use>
+					</svg>
+					<span>8 (777) 237 59 73</span>
+				</a>
+
+				<a href="mailto:chistkaven@gmail.com" class="footer_contact">
+					<svg class="icon">
+						<use xlink:href="#envelope"></use>
+					</svg>
+					<span>chistkaven@gmail.com</span>
+				</a>
+
+				<a href="https://www.instagram.com/gsc.chistkaven/" target="_blank" class="footer_contact">
+					<svg class="icon">
+						<use xlink:href="#instagram"></use>
+					</svg>
+					<span>@gsc.chistkaven</span>
+				</a>
+			</div>
+
+			<div class="footer_col">
+				<div class="footer_buttons">
+					<button data-form="data" class="button button-small button-primary">вызов</button>
+					<button data-form="service" class="button button-small">калькулятор</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+	<script src="assets/js/external/inputmask.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
